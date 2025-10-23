@@ -1,0 +1,7 @@
+streamlit
+pandas
+numpy
+opencv-python
+scikit-learn
+tensorflow as tf
+tempfile
