@@ -3,15 +3,27 @@ import cv2
 import numpy as np
 import tensorflow as tf
 import tempfile
+import urllib.request
+import os
 from Add_logo import add_logo
 import pandas as pd
+from pathlib import Path
 
+# URL of your model file on GitHub Releases
+MODEL_URL = "https://github.com/Viveka9Patil/DermiNOW/releases/download/v1.0.0/my_model.h5"
 
+# Create a local models folder
+Path("models").mkdir(exist_ok=True)
+MODEL_PATH = Path("models/my_model.h5")
 
-model_file_path = "https://github.com/Viveka9Patil/DermiNOW/releases/download/v1.0.0/my_model.h5"
-# If the model is in the same directory as the main
-# you don't need to give absolute path but if it's not give the absolute path
-model = tf.keras.models.load_model(model_file_path)
+# Download the model if not already present
+if not MODEL_PATH.exists():
+    st.write("Downloading model file...")
+    urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
+    st.success("Model downloaded successfully!")
+
+# Load the local model
+model = tf.keras.models.load_model(MODEL_PATH)
 
 # So basically this over here gives the model the prediction names without this the prediction names would be
 # 0,1,2,3 and so on this gives the names as you see
@@ -381,3 +393,4 @@ if st.session_state.logged_in:
     else:
 
         st.warning("Please log in to access the app.")
+
