@@ -1,7 +1,13 @@
+# core
 streamlit
-pandas
-numpy
-opencv-python
-scikit-learn
-tensorflow as tf
-tempfile
+pandas==2.2.2
+numpy==1.26.4
+
+# CV / ML
+opencv-python==4.10.0.84
+scikit-learn==1.4.2
+Pillow==10.4.0
+h5py==3.10.0
+
+# TensorFlow (CPU build)
+tensorflow-cpu==2.15.0
