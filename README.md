@@ -39,21 +39,13 @@ git clone https://github.com/Viveka9Patil/DermiNOW.git
 cd DermiNOW
 ```
 
-### Create and activate a virtual environment *(optional but recommended)*
-
-```bash
-python -m venv venv
-source venv/bin/activate     # macOS/Linux
-venv\Scripts\activate        # Windows
-```
-
 ### Install the required dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Download the trained CNN model
+### Download the trained CNN model
 
 The model (`my_model.h5`) is hosted under **GitHub Releases**.
 
