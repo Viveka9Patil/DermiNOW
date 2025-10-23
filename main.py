@@ -8,7 +8,7 @@ import pandas as pd
 
 
 
-model_file_path = r"/model.h5"
+model_file_path = r"PATH/TO/model.h5"
 # If the model is in the same directory as the main
 # you don't need to give absolute path but if it's not give the absolute path
 model = tf.keras.models.load_model(model_file_path)
@@ -381,5 +381,6 @@ if st.session_state.logged_in:
     else:
 
         st.warning("Please log in to access the app.")
+
 
 
