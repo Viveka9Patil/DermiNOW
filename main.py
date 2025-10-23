@@ -8,7 +8,7 @@ import pandas as pd
 
 
 
-model_file_path = r"C:/Users/81WJ001UIN\Desktop\SIH/Frontend/my_model.h5"
+model_file_path = "https://github.com/Viveka9Patil/DermiNOW/releases/download/v1.0.0/my_model.h5"
 # If the model is in the same directory as the main
 # you don't need to give absolute path but if it's not give the absolute path
 model = tf.keras.models.load_model(model_file_path)
@@ -379,4 +379,5 @@ if st.session_state.logged_in:
             st.table(df)
 
     else:
+
         st.warning("Please log in to access the app.")
