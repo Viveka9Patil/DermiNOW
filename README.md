@@ -101,10 +101,14 @@ streamlit run main.py
 
 ---
 
-## **Contributors**
+## Contributors
 
 Viveka Patil – [Viveka9Patil](https://github.com/Viveka9Patil)
 Rujuta Thombre - [RujutaThombre](https://github.com/RujutaThombre)
+
+---
+## Video Prototype 
+
 
 ## Acknowledgements
 
